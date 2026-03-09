@@ -124,11 +124,6 @@ header {
   margin: 0 auto;
 }
 
-.ab-text-wrap {
-  padding-top: 86px;
-  padding-bottom: 76px;
-}
-
 .ab-img-wrap {
   display: flex;
   flex-direction: column;
@@ -157,12 +152,15 @@ header {
   font-weight: 700;
   padding-bottom: 100px;
 }
+/* 자기소개 텍스트 소제목 */
 .ab-text-wrap h5 {
   font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 20px;
 }
-.ab-text-wrap > h5 {
-  margin: 60px 0px;
+/* 자기소개 텍스트 리스트 */
+.ab-text-wrap ul li {
+  margin-bottom: 1rem;
 }
 
 /* skill */
@@ -243,7 +241,7 @@ li {
   width: 440px;
 }
 
-.short-img-wrap img {
+.short-thumnail > img {
   width: 100%;
   height: 100%;
 }
@@ -366,132 +364,6 @@ button {
   cursor: pointer;
 }
 
-/* img-slider */
-.img-slider-wrap {
-  width: 60%;
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-  margin-bottom: 150px;
-}
-.img-slider {
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  background: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-}
-
-.img-slider-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.img-description {
-  width: 400px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.img-description > h6 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-.img-description > ul > li {
-  margin: 15px 0;
-}
-.img-description > ul > li > p {
-  font-size: 1.75rem;
-}
-
-/* page */
-.page {
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.page img {
-  width: 100%;
-  display: block;
-}
-
-.caption {
-  padding: 15px;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-
-/* 좌우 네비게이션 버튼 공통 스타일 */
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  border-radius: 50%;
-
-  /* 크기 고정 */
-  width: 30px !important;
-  height: 30px !important;
-  min-width: 30px;
-
-  cursor: pointer;
-  z-index: 10;
-
-  display: flex;
-  align-items: center; /* 수직 중앙 */
-  justify-content: center; /* 수평 중앙 */
-
-  padding: 0;
-  margin: 0;
-  color: #333;
-  flex-shrink: 0; /* 버튼이 찌그러지는 것 방지 */
-}
-.slider-btn > img {
-  width: 40%;
-}
-/* 각 버튼의 가로 위치 */
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-/* 버튼이 숨겨질 때 사용할 클래스 */
-.hidden {
-  opacity: 0;
-  pointer-events: none; /* 클릭 안되게 설정 */
-}
-
-.img-indicator {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  padding: 0;
-  z-index: 10;
-}
-
-.img-indicator .dot {
-  width: 6px;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.img-indicator .dot.active {
-  background: #fff;
-}
-
 /* shorts-pc */
 .short {
   margin-top: 80px;
@@ -525,7 +397,7 @@ button {
 }
 
 .short > ul.short-list > li {
-  width: 280px;
+  width: 430px;
   flex: 0 0 auto;
   /* 스냅 정렬 제거 */
   /* scroll-snap-align: center; */
