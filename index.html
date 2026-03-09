@@ -3,10 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>영상 포트폴리오</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gmarket-sans" />
+    <link rel="icon" type="image/png" href="image/favicon.svg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/copyEmail.js"></script>
+    <script src="js/imgSlider.js"></script>
   </head>
-  <body>
-    <h1>깃허브 테스트 페이지</h1>
+  <body id="content-top">
+    <header>
+      <div class="header-inner center">
+        <h1 class="logo">
+          <a href="#">
+            <img src="image/logo.png" alt="로고" />
+          </a>
+        </h1>
+        <nav class="gnb">
+          <a href="#">ABOUT</a>
+          <a href="#">SKILL</a>
+          <a href="#">WORK</a>
+          <a href="#">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="container">
+      <section id="main-visual">
+        <video muted autoplay loop>
+          <source src="video/main.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section id="profile" class="center">
+        <h3 class="section-title">ABOUT</h3>
+        <div class="about-inner">
+          <div class="ab-text-wrap">
+            <h4>“ 말보다 장면으로 표현하는 편집자. ”</h4>
+            <div>
+              <h5>EDUCATION</h5>
+              <ul>
+                <li>25.11~26.04 구월그린컴퓨터아트학원</li>
+                <li>
+                  멀티미디어-영상편집, 모션그래픽(프리미어, 애프터이펙트, 시네마4D)과 UI/UX 구현
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ab-img-wrap">
+            <img src="image/profile.png" alt="프로필 사진" />
+          </div>
+        </div>
+      </section>
+      <section id="skill" class="center">
+        <h3 class="section-title">SKILL</h3>
+        <ul>
+          <li>
+            <div class="skill-img-wrap">
+              <img src="image/ps.png" alt="ps" />
+            </div>
+            <ul>
+              <li>이미지 합성</li>
+              <li>이미지 보정</li>
+              <li>배너 / 썸네일 제작</li>
+            </ul>
+          </li>
+          <li>
+            <div class="skill-img-wrap">
+              <img src="image/ai.png" alt="ai" />
+            </div>
+            <ul>
+              <li>이미지 합성</li>
+              <li>이미지 보정</li>
+              <li>배너 / 썸네일 제작</li>
+            </ul>
+          </li>
+          <li>
+            <div class="skill-img-wrap">
+              <img src="image/pr.png" alt="pr" />
+            </div>
+            <ul>
+              <li>컷 편집</li>
+              <li>영상 합성 / 편집</li>
+              <li>색보정</li>
+              <li>자막 디자인</li>
+            </ul>
+          </li>
+          <li>
+            <div class="skill-img-wrap">
+              <img src="image/ae.png" alt="ae" />
+            </div>
+            <ul>
+              <li>모션 그래픽스</li>
+              <li>영상 합성 / 편집</li>
+              <li>후보정</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="work" class="center">
+        <h3 class="section-title">WORK</h3>
+        <div class="short">
+          <button class="short-btn prev-btn">
+            <img src="image/arr-wh-small-r.png" alt="이전" />
+          </button>
+          <button class="short-btn next-btn">
+            <img src="image/arr-wh-small-l.png" alt="다음" />
+          </button>
+          <ul class="short-list">
+            <li>
+              <a
+                href="https://www.youtube.com/shorts/8y7hBa-k6mk"
+                target="_blank"
+                title="새 창으로 열기"
+              >
+                <div class="short-img-wrap">
+                  <div class="short-title">
+                    <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
+                  </div>
+                  <img class="short-thumnail" src="image/razer.jpg" alt="short" />
+                  <div class="capsion">RAZER 광고 영상</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/shorts/L3jnUKiow3M"
+                target="_blank"
+                title="새 창으로 열기"
+              >
+                <div class="short-title">
+                  <div class="short-img-wrap">
+                    <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
+                  </div>
+                </div>
+                <img class="short-thumnail" src="image/ORIGIN.jpg" alt="short" />
+                <div class="capsion">음료 광고 영상</div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/shorts/zG_2Q1hHCXo"
+                target="_blank"
+                title="새 창으로 열기"
+              >
+                <div class="short-title">
+                  <div class="short-img-wrap">
+                    <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
+                  </div>
+                </div>
+                <img class="short-thumnail" src="image/modutour.jpg" alt="short" />
+                <div class="capsion">모두투어 광고 영상</div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/shorts/SXbtALV1dBk"
+                target="_blank"
+                title="새 창으로 열기"
+              >
+                <div class="short-title">
+                  <div class="short-img-wrap">
+                    <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
+                  </div>
+                </div>
+                <img class="short-thumnail" src="image/short-4.jpg" alt="short" />
+                <div class="capsion">광고 영상</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact">
+        <h3 class="section-title">CONTACT</h3>
+        <ul class="contact-list">
+          <li>
+            <a
+              href="#"
+              onclick="
+                copyEmail();
+                return false;
+              "
+              ><img src="image/mail.svg" alt="이메일 아이콘" /> hemin1461@naver.com</a
+            >
+          </li>
+
+          <li>
+            <a href="https://vimeo.com/" target="_blank"
+              ><img src="image/vimeo.svg" alt="깃허브 아이콘" /> mio-moi.github.io</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="image/instagram.svg" alt="인스타그램 아이콘" /> @</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <small class="copy">&copy; ©2026 MIO. All right reserved. </small>
+      <a href="#content-top" class="btn-top">
+        <img src="image/arr-wh.png" alt="맨 위로 가기" />
+        <small>Top</small>
+      </a>
+    </footer>
   </body>
 </html>
