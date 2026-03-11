@@ -44,8 +44,8 @@ iframe {
 a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   transition: 300ms;
 }
 a:hover,
@@ -68,12 +68,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 7px 0px;
 }
 .logo {
   align-self: center;
   /* 로고 너비 지정 */
   width: 65px;
+  height: 46px;
 }
 
 .logo > a > img {
@@ -83,11 +84,18 @@ header {
 .gnb > a {
   margin-left: 40px;
 }
+
+#container {
+  margin-top: 60px;
+}
+
 .section-title {
   font-family: 'Gmarket Sans', serif;
   font-size: 4rem;
   font-weight: 800;
   text-align: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 .section-sub-title {
   font-family: 'Gmarket Sans', serif;
@@ -96,26 +104,68 @@ header {
   text-align: center;
 }
 
+/* portfolio */
+#portfolio {
+  padding-top: 32px;
+  height: 294px;
+}
+.portfolio-bg-box {
+  width: 90%;
+  height: 230px;
+  background-color: #e3dac9;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#portfolio img {
+  position: absolute;
+  bottom: 590px;
+  right: 395px;
+  height: 212px;
+  width: auto;
+  z-index: 10;
+}
+
 /* main visual */
 #main-visual {
+  margin-top: 103px;
+  margin-bottom: 126px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.video-box {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
 }
-#main-visual > video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.video-box video {
+  width: 100%; /* 부모 폭에 맞춤 */
+  height: 100%; /* 부모 높이 기준 */
   object-fit: cover;
 }
 
+.video-title {
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin-top: 28px;
+  margin-bottom: 13px;
+  padding-left: 30px;
+}
+
+.video-desc {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+/* profile */
 #profile {
-  margin-top: 80px;
   background-color: #e3dac9;
-  padding-top: 54px;
-  padding-bottom: 54px;
+  padding-top: 27px;
   border-radius: 50px;
 }
 .about-inner {
@@ -145,27 +195,31 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10rem;
+  padding-left: 127px;
+  padding-right: 90px;
 }
 .ab-text-wrap > h4 {
-  font-size: 3.6rem;
-  font-weight: 700;
+  font-size: 27px;
+  font-weight: 500;
   padding-bottom: 100px;
 }
 /* 자기소개 텍스트 소제목 */
 .ab-text-wrap h5 {
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* 자기소개 텍스트 리스트 */
 .ab-text-wrap ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 25px;
 }
 
 /* skill */
 #skill {
-  margin: 160px auto;
+  margin-top: 109px;
 }
 #skill > ul {
   display: flex;
@@ -183,72 +237,51 @@ header {
 }
 
 .skill-img-wrap {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 40px;
   margin-left: 67.5px;
   margin-right: 67.5px;
 }
 
-li {
+#skill ul li {
   font-family: 'Gmarket Sans', serif;
   margin-bottom: 12px;
   font-size: 22px;
 }
 
 /* work */
-.card-thumbnail > img {
-  width: 100%;
-}
-.card-detail {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-.card-detail > h5 {
-  font-size: 3rem;
-}
-.card-detail > ul {
-  margin: 20px 0;
-}
-.card-detail > ul > li {
-  line-height: 2.6rem;
-}
-.card-detail .long-btns {
-  display: flex;
-}
-.card-detail .long-btns > a {
-  color: #212121;
-  font-size: 1.8rem;
-  font-weight: bold;
-  display: block;
-  line-height: 38px;
-  border: 1px solid #516768;
-  padding: 0px 25px;
-  border-radius: 32px;
-  font-style: italic;
-}
-.card-detail .long-btns > a:first-child {
-  margin-right: 20px;
-}
-.card-detail .long-btns > a:hover,
-.card-detail .long-btns > a:focus {
-  background-color: #fff;
-  color: #333;
+#work {
+  margin-top: 109px;
+  padding-top: 50px;
+  padding-bottom: 123.5px;
+  background-color: #e3dac9;
+  border-radius: 50px;
 }
 
+/* short */
 .short-img-wrap {
-  position: relative;
   width: 440px;
+}
+
+.short-img-wrap img {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .short-thumnail > img {
   width: 100%;
   height: 100%;
 }
-.capsion {
+.caption {
   font-family: 'JUA', sans-serif;
   font-size: 20px;
+  width: 440px;
   background-color: #0f3057;
+  padding: 13px 0px 13px 60px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* 카드형 슬라이더 */
@@ -366,7 +399,7 @@ button {
 
 /* shorts-pc */
 .short {
-  margin-top: 80px;
+  margin-top: 68px;
   width: 100%;
   position: relative;
   /* 버튼이 리스트 영역 밖으로 배치될 공간 확보 */
@@ -386,7 +419,6 @@ button {
   /* scroll-snap-type: x mandatory; */
   /* -webkit-overflow-scrolling: touch; */
 
-  padding: 0 0 20px 0;
   width: max-content;
   margin: 0 auto;
   max-width: 100%;
@@ -502,24 +534,62 @@ button {
 
 /* contact-pc */
 #contact {
-  margin: 160px 0px;
-}
-#contact .contact-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 50px 0;
+  margin: 122px 0px;
 }
 
-#contact .contact-list > li > a {
+.contact-list-wrap {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  margin-left: -100px;
+  padding-top: 5.5px;
+}
+
+#contact .contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+#contact .contact-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-img-wrap {
+  width: 61px;
+  height: 61px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img-wrap img {
+  width: auto;
+  height: auto;
+  max-width: 61px;
+  max-height: 61px;
+}
+
+.contact-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-text-wrap strong {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#contact .contact-text-wrap span {
+  font-size: 15px;
 }
 
 /* footer */
 footer {
   text-align: center;
   padding: 40px;
+  font-size: 16px;
 }
 
 /* 특정 스크롤 값에서 맨위로가기 버튼이 보였다 안보였다 설정 디자인 */
@@ -680,9 +750,7 @@ footer {
     font-size: 1.4rem;
     margin-left: 10px;
   }
-  #main-visual > video {
-    top: 46px; /* 본인의 헤더 높이만큼 설정 */
-  }
+
   .section-title {
     font-size: 2.6rem;
     font-weight: 600;

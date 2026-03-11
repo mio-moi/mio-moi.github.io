@@ -50,10 +50,23 @@
     </header>
 
     <main id="container">
-      <section id="main-visual">
-        <video muted autoplay loop>
-          <source src="video/main.mp4" type="video/mp4" />
-        </video>
+      <section id="portfolio" class="center">
+        <div class="portfolio-bg-box"></div>
+        <img src="image/portfolio.png" alt="portfolio" />
+      </section>
+      <section id="main-visual" class="center">
+        <div class="video-box">
+          <video muted autoplay loop>
+            <source src="video/main.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="main-text-wrap">
+          <p class="video-title">모두투어 광고 영상</p>
+          <p class="video-desc">
+            지친 일상을 잠시 내려놓고, 어디든 떠날 수 있다는 설렘을 담아 모두투어 광고 영상을
+            제작했습니다.
+          </p>
+        </div>
       </section>
       <section id="profile" class="center">
         <h3 class="section-title">ABOUT</h3>
@@ -61,7 +74,7 @@
           <div class="ab-text-wrap">
             <h4>“ 말보다 장면으로 표현하는 편집자. ”</h4>
             <div>
-              <h5>EDUCATION</h5>
+              <h5>Education</h5>
               <ul>
                 <li>25.11~26.04 구월그린컴퓨터아트학원</li>
                 <li>
@@ -142,7 +155,7 @@
                     <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
                   </div>
                   <img class="short-thumnail" src="image/razer.jpg" alt="short" />
-                  <div class="capsion">RAZER 광고 영상</div>
+                  <div class="caption">RAZER 광고 영상</div>
                 </div>
               </a>
             </li>
@@ -152,13 +165,13 @@
                 target="_blank"
                 title="새 창으로 열기"
               >
-                <div class="short-title">
-                  <div class="short-img-wrap">
+                <div class="short-img-wrap">
+                  <div class="short-title">
                     <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
                   </div>
+                  <img class="short-thumnail" src="image/ORIGIN.jpg" alt="short" />
+                  <div class="caption">음료 광고 영상</div>
                 </div>
-                <img class="short-thumnail" src="image/ORIGIN.jpg" alt="short" />
-                <div class="capsion">음료 광고 영상</div>
               </a>
             </li>
             <li>
@@ -167,13 +180,13 @@
                 target="_blank"
                 title="새 창으로 열기"
               >
-                <div class="short-title">
-                  <div class="short-img-wrap">
+                <div class="short-img-wrap">
+                  <div class="short-title">
                     <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
                   </div>
+                  <img class="short-thumnail" src="image/modutour.jpg" alt="short" />
+                  <div class="caption">모두투어 광고 영상</div>
                 </div>
-                <img class="short-thumnail" src="image/modutour.jpg" alt="short" />
-                <div class="capsion">모두투어 광고 영상</div>
               </a>
             </li>
             <li>
@@ -182,13 +195,13 @@
                 target="_blank"
                 title="새 창으로 열기"
               >
-                <div class="short-title">
-                  <div class="short-img-wrap">
+                <div class="short-img-wrap">
+                  <div class="short-title">
                     <img src="image/btn_shorts.svg" alt="쇼츠 보기" />
                   </div>
+                  <img class="short-thumnail" src="image/modutour.jpg" alt="short" />
+                  <div class="caption">광고 영상</div>
                 </div>
-                <img class="short-thumnail" src="image/short-4.jpg" alt="short" />
-                <div class="capsion">광고 영상</div>
               </a>
             </li>
           </ul>
@@ -196,34 +209,42 @@
       </section>
       <section id="contact">
         <h3 class="section-title">CONTACT</h3>
-        <ul class="contact-list">
-          <li>
-            <a
-              href="#"
-              onclick="
-                copyEmail();
-                return false;
-              "
-              ><img src="image/mail.svg" alt="이메일 아이콘" /> hemin1461@naver.com</a
-            >
-          </li>
-
-          <li>
-            <a href="https://vimeo.com/" target="_blank"
-              ><img src="image/vimeo.svg" alt="깃허브 아이콘" /> mio-moi.github.io</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><img src="image/instagram.svg" alt="인스타그램 아이콘" /> @</a
-            >
-          </li>
-        </ul>
+        <div class="contact-list-wrap">
+          <ul class="contact-list">
+            <li>
+              <div class="contact-img-wrap">
+                <img src="image/phone.png" alt="phone 아이콘" />
+              </div>
+              <div class="contact-text-wrap">
+                <strong>Phone</strong>
+                <span>010-5283-****</span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-img-wrap">
+                <img src="image/mail.png" alt="이메일 아이콘" />
+              </div>
+              <div class="contact-text-wrap">
+                <strong>Mail</strong>
+                <span>*****@naver.com</span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-img-wrap">
+                <img src="image/Instagram.png" alt="인스타그램 아이콘" />
+              </div>
+              <div class="contact-text-wrap">
+                <strong>Instagram</strong>
+                <span>@</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer>
-      <small class="copy">&copy; ©2026 MIO. All right reserved. </small>
+      <small class="copy">&copy; 2026 MIO. All right reserved. </small>
       <a href="#content-top" class="btn-top">
         <img src="image/arr-wh.png" alt="맨 위로 가기" />
         <small>Top</small>
