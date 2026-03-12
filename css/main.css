@@ -128,8 +128,8 @@ header {
 
 /* main visual */
 #main-visual {
-  margin-top: 103px;
-  margin-bottom: 126px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -142,15 +142,15 @@ header {
   aspect-ratio: 16 / 9;
 }
 
-.video-box video {
+.video-box img {
   width: 100%; /* 부모 폭에 맞춤 */
   height: 100%; /* 부모 높이 기준 */
   object-fit: cover;
 }
 
 .video-title {
-  font-size: 2.7rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   margin-top: 28px;
   margin-bottom: 13px;
   padding-left: 30px;
@@ -256,32 +256,6 @@ header {
   padding-bottom: 123.5px;
   background-color: #e3dac9;
   border-radius: 50px;
-}
-
-/* short */
-.short-img-wrap {
-  width: 440px;
-}
-
-.short-img-wrap img {
-  position: relative;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.short-thumnail > img {
-  width: 100%;
-  height: 100%;
-}
-.caption {
-  font-family: 'JUA', sans-serif;
-  font-size: 20px;
-  width: 440px;
-  background-color: #0f3057;
-  padding: 13px 0px 13px 60px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 /* 카드형 슬라이더 */
@@ -429,7 +403,7 @@ button {
 }
 
 .short > ul.short-list > li {
-  width: 430px;
+  width: 440px;
   flex: 0 0 auto;
   /* 스냅 정렬 제거 */
   /* scroll-snap-align: center; */
@@ -440,40 +414,53 @@ button {
   display: block;
 }
 
-.short > ul.short-list > li > a > div.short-img-wrap > div.short-title {
+/* short */
+.short-img-wrap {
+  position: relative;
+  width: 440px;
+}
+
+.short-thumnail {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.short-img-wrap .short-title {
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   transition: 0.6s;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
 }
 
-.short > ul.short-list > li > a:hover > div.short-title {
+.short-img-wrap:hover .short-title {
   opacity: 1;
-}
-
-.short > ul.short-list > li > a > div.short-title > span {
-  display: block;
-  margin-bottom: 24px;
-  font-size: 2rem;
 }
 
 .short > ul.short-list > li > a > div.short-title > img {
   width: 60px;
 }
 
-.short-thumnail {
-  width: 100%;
-  display: block;
+.caption {
+  font-family: 'JUA', sans-serif;
+  font-size: 20px;
+  width: 440px;
+  background-color: #0f3057;
+  padding: 13px 0px 13px 60px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* 좌우 이동 버튼 스타일 */
@@ -482,7 +469,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: #333;
+  background: #e3dac9;
   width: 50px;
   height: 50px;
   border-radius: 50%;
