@@ -119,10 +119,10 @@ header {
 
 #portfolio img {
   position: absolute;
-  bottom: 590px;
-  right: 395px;
-  height: 212px;
-  width: auto;
+  bottom: 63%;
+  right: 21.5%;
+  height: auto;
+  width: 506px;
   z-index: 10;
 }
 
