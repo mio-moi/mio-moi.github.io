@@ -75,6 +75,7 @@ header {
   /* 로고 너비 지정 */
   width: 65px;
   height: 46px;
+  margin-left: 30px;
 }
 
 .logo > a > img {
@@ -94,8 +95,7 @@ header {
   font-size: 4rem;
   font-weight: 800;
   text-align: center;
-  margin-top: 27px;
-  margin-bottom: 27px;
+  padding: 27px 0px;
 }
 .section-sub-title {
   font-family: 'Gmarket Sans', serif;
@@ -106,29 +106,27 @@ header {
 
 /* portfolio */
 #portfolio {
-  padding-top: 32px;
-  height: 294px;
+  padding-top: 35px;
+  height: 140px;
 }
 .portfolio-bg-box {
-  width: 90%;
-  height: 230px;
+  width: 95%;
+  height: 90px;
   background-color: #e3dac9;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #portfolio img {
   position: absolute;
-  bottom: 63%;
-  right: 21.5%;
-  height: auto;
-  width: 506px;
+  bottom: 79%;
+  right: 18.3%;
   z-index: 10;
 }
 
 /* main visual */
 #main-visual {
-  margin-top: 200px;
+  margin-top: 30px;
   margin-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -151,9 +149,9 @@ header {
 .video-title {
   font-size: 20px;
   font-weight: 400;
-  margin-top: 28px;
+  margin-top: 30px;
   margin-bottom: 13px;
-  padding-left: 30px;
+  text-align: center;
 }
 
 .video-desc {
@@ -165,24 +163,23 @@ header {
 /* profile */
 #profile {
   background-color: #e8e1d4;
-  padding-top: 27px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   border-radius: 50px;
 }
 .about-inner {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .ab-img-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 42%;
   flex-shrink: 0;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  padding-right: 135px;
+  padding: 5px 125px 5px 0px;
 }
 .ab-img-wrap > img {
   width: 100%;
@@ -195,8 +192,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 127px;
-  padding-right: 90px;
+  padding: 5px 81px 5px 125px;
 }
 .ab-text-wrap > h4 {
   font-size: 27px;
@@ -207,24 +203,27 @@ header {
 .ab-text-wrap h5 {
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 /* 자기소개 텍스트 리스트 */
 .ab-text-wrap ul li {
-  margin-bottom: 0.6rem;
   font-size: 15px;
   font-weight: 400;
-  padding-left: 25px;
+  line-height: 140%;
 }
 
 /* skill */
 #skill {
-  margin-top: 109px;
+  margin-top: 200px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 #skill > ul {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  margin: 30px 117px 0px 117px;
+  padding: 20px;
 }
 #skill h4 {
   font-weight: 700;
@@ -237,23 +236,40 @@ header {
 }
 
 .skill-img-wrap {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: 67.5px;
-  margin-right: 67.5px;
+  text-align: center;
+  margin: 0px 62px 41px 62px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.skill-img-wrap img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#skill ul li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
 }
 
 #skill ul li {
   font-family: 'Gmarket Sans', serif;
-  margin-bottom: 12px;
   font-size: 22px;
+  line-height: 100%;
 }
 
 /* work */
 #work {
-  margin-top: 109px;
-  padding-top: 50px;
-  padding-bottom: 123.5px;
+  margin-top: 200px;
+  padding-top: 25px;
+  padding-bottom: 70px;
   background-color: #e8e1d4;
   border-radius: 50px;
 }
@@ -373,11 +389,11 @@ button {
 
 /* shorts-pc */
 .short {
-  margin-top: 68px;
   width: 100%;
   position: relative;
   /* 버튼이 리스트 영역 밖으로 배치될 공간 확보 */
-  padding: 0 80px;
+  margin-top: 30px;
+  padding: 0px 129px;
   box-sizing: border-box;
 }
 
@@ -403,7 +419,6 @@ button {
 }
 
 .short > ul.short-list > li {
-  width: 440px;
   flex: 0 0 auto;
   /* 스냅 정렬 제거 */
   /* scroll-snap-align: center; */
@@ -417,7 +432,8 @@ button {
 /* short */
 .short-img-wrap {
   position: relative;
-  width: 440px;
+  width: 500px;
+  height: 281px;
 }
 
 .short-thumnail {
@@ -443,6 +459,8 @@ button {
   flex-direction: column;
   text-align: center;
   z-index: 10;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .short-img-wrap:hover .short-title {
@@ -456,9 +474,9 @@ button {
 .caption {
   font-family: 'JUA', sans-serif;
   font-size: 20px;
-  width: 440px;
+  width: 500px;
   background-color: #0f3057;
-  padding: 13px 0px 13px 60px;
+  padding: 22px 0px 22px 68px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -521,14 +539,17 @@ button {
 
 /* contact-pc */
 #contact {
-  margin: 122px 0px;
+  margin: 200px 0px;
+  padding-top: 25px;
+  padding-bottom: 36px;
 }
 
 .contact-list-wrap {
   display: flex;
   justify-content: center;
-  margin-left: -100px;
-  padding-top: 5.5px;
+  margin-left: -4%;
+  margin-top: 30px;
+  padding: 8px 0px;
 }
 
 #contact .contact-list {
@@ -575,8 +596,18 @@ button {
 /* footer */
 footer {
   text-align: center;
-  padding: 40px;
-  font-size: 16px;
+  height: 100px;
+  background: linear-gradient(to bottom, #f5f1e8, #e3dacb);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  font-size: 15px;
+  padding: 41px 0px;
+  text-align: center;
+  flex: 1;
 }
 
 /* 특정 스크롤 값에서 맨위로가기 버튼이 보였다 안보였다 설정 디자인 */
@@ -587,6 +618,7 @@ footer {
   bottom: 120px;
   opacity: 0;
   transition: 0.5s;
+  color: #212121;
 }
 .btn-top img {
   width: 100%;
