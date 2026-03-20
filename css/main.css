@@ -644,11 +644,27 @@ footer {
     margin-bottom: 40px;
     text-align: center;
   }
+
+  #portfolio img {
+    position: absolute;
+    bottom: 85%;
+    right: 2%;
+    z-index: 10;
+  }
+
+  #profile {
+    margin-bottom: 200px;
+  }
+
   #about {
     margin-top: calc((100vw * 9 / 16) + 80px);
   }
+  .about-inner {
+    padding-bottom: 20px;
+  }
   .ab-img-wrap {
     width: 40%;
+    padding-right: 81px;
   }
   .ab-img-wrap > img {
     width: 100%;
@@ -657,16 +673,22 @@ footer {
     padding-left: 6rem;
   }
   .ab-text-wrap > h4 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .ab-text-wrap > h5 {
     font-size: 1.6rem;
   }
   #skill {
-    margin: 100px 0px;
+    margin-bottom: 200px;
   }
   #skill h4 > strong {
     font-size: 2.2rem;
+  }
+  #skill ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+    padding: 20px;
   }
   :root {
     --card-width: 420px;
@@ -696,6 +718,10 @@ footer {
   }
   /* shorts-tablet */
   /* 1. 기본 레이아웃 조정 */
+
+  #work {
+    margin-bottom: 200px;
+  }
   .short {
     margin-top: 40px;
     padding: 0; /* 버튼 제거 후 패딩 제거 */
@@ -703,11 +729,12 @@ footer {
 
   .short > ul.short-list {
     gap: 30px;
-    padding: 0 20px 20px 20px; /* 양옆 여백 추가 */
+    padding: 0 20px 0px 20px; /* 양옆 여백 추가 */
   }
 
   .short > ul.short-list > li {
-    width: 220px; /* 타블렛용 카드 너비 */
+    margin: 0px 10px;
+    width: 500px; /* 타블렛용 카드 너비 */
   }
 
   /* 쇼츠 버튼 숨김 */
@@ -739,7 +766,11 @@ footer {
   }
   /* contact-tablet */
   #contact {
-    margin: 100px 0px;
+    margin-bottom: 200px;
+    padding: 0px;
+  }
+  .contact-list-wrap {
+    margin-left: -10%;
   }
   footer {
     padding-bottom: 40px;
@@ -754,6 +785,9 @@ footer {
 
   body {
     font-size: 1.4rem;
+  }
+  .logo {
+    margin: 0px;
   }
   .center {
     width: initial;
@@ -775,28 +809,55 @@ footer {
     margin-bottom: 40px;
     text-align: center;
   }
+  #portfolio {
+    height: 100px;
+    padding-top: 20px;
+  }
+  #portfolio img {
+    position: absolute;
+    bottom: 85.5%;
+    right: 4%;
+    width: 25%;
+    z-index: 10;
+  }
+  .portfolio-bg-box {
+    height: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #main-visual {
+    margin: 0px auto 100px auto;
+  }
+  .main-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
   #about {
     margin-top: calc((100vw * 9 / 16) + 60px);
     text-align: center;
   }
   .about-inner {
     display: block;
-    width: 80%;
+    width: 100%;
+    padding: 0px;
   }
   .ab-img-wrap {
-    width: 70%;
+    width: 100%;
     margin: 0px auto;
+    padding: 10px 0px;
   }
   .ab-img-wrap > img {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .ab-text-wrap {
-    width: 80%;
-    padding-left: 0;
+    width: 100%;
+    padding: 5px 0px;
     margin: 28px auto 0 auto;
   }
   .ab-text-wrap > h4 {
     font-size: 2.2rem;
+    padding-bottom: 50px;
   }
   .ab-text-wrap > h5 {
     font-size: 1.6rem;
