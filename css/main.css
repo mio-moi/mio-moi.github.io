@@ -1038,8 +1038,21 @@ footer {
     display: block;
   }
   #contact .contact-list li {
-    padding: 10px 0;
-    font-size: 1.5rem;
+    padding: 15px 0;
+  }
+  .contact-img-wrap {
+    width: 45px;
+    height: 45px;
+  }
+  .contact-img-wrap img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  #contact .contact-text-wrap strong {
+    font-size: 1.6rem;
+  }
+  #contact .contact-text-wrap span {
+    font-size: 1.2rem;
   }
   footer {
     padding: 16px;
