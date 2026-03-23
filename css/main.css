@@ -810,10 +810,10 @@ footer {
   }
   .center {
     width: initial;
-    padding: 8px 18px;
+    padding: 8px 15px;
   }
   .gnb > a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 10px;
   }
 
@@ -841,6 +841,7 @@ footer {
     bottom: 0;
     right: 4%;
     max-width: 17%;
+    min-width: 120px;
     height: auto;
     z-index: 10;
   }
@@ -850,15 +851,16 @@ footer {
     border-bottom-right-radius: 10px;
   }
   #main-visual {
-    margin: 0px auto 100px auto;
+    margin: 0px auto 50px auto;
   }
   .main-title {
     font-size: 1.5rem;
     margin-top: 20px;
   }
-  #about {
-    margin-top: calc((100vw * 9 / 16) + 60px);
+  #profile {
+    width: 90%;
     text-align: center;
+    border-radius: 20px;
   }
   .about-inner {
     display: block;
@@ -893,7 +895,7 @@ footer {
     padding-left: 20px;
   }
   #skill {
-    margin: 100px 0px;
+    margin: 50px 0px;
   }
   #skill h4 {
     margin-bottom: 16px;
@@ -924,8 +926,10 @@ footer {
 
   /* work */
   #work {
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
     padding: 25px 0 40px 0;
+    border-radius: 20px;
   }
 
   /* slider-mobile */
@@ -1051,7 +1055,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0px;
+    margin: 50px 0px;
     padding: 25px 0;
   }
   .contact-list-wrap {
@@ -1079,7 +1083,11 @@ footer {
     font-size: 1.2rem;
   }
   footer {
-    padding: 16px;
+    height: auto;
+    padding: 10px;
+  }
+  .copy {
+    padding: 20px 0px;
   }
   .btn-top {
     right: 20px;
